@@ -29,7 +29,7 @@ void print_matrix(matrix m) {
     int i,j;
     for ( i = 0; i < ZEILEN; i++) {
         for (j= 0; j < SPALTEN; j++) {
-            printf("%4.0f |", getEntry(m,i,j));
+            printf("%4.0d |", getEntry(m,i,j));
         }
         printf("\n");
     }
@@ -38,7 +38,7 @@ void print_matrix(matrix m) {
 void print_vector(vector v) {
     int i;
     for (i = 0; i < ZEILEN; i++) {
-        printf("%4.0f \n", getValue(v,i));
+        printf("%4.0d \n", getValue(v,i));
     }
     printf("\n");
 }
